@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ScheduleFragment"
+    android:background="@color/colorBackground">
+
+    <metafire.stageready.libs.compact_calendar_view.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactCalendarView"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        app:compactCalendarTextSize="13dp"
+        app:compactCalendarBackgroundColor="@color/colorBackground"
+        app:compactCalendarTextColor="@color/colorPrimaryDark"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorSelected"
+        app:compactCalendarCurrentDayBackgroundColor="@color/colorCurrentDay"
+        android:layout_gravity="top"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="2dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event"
+            android:id="@+id/addEventButton"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickAddEvent"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:id="@+id/schedMenuButton"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="false"
+            android:onClick="onClickSchedMenu"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+            android:id="@+id/monthTextView"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/leftArrowImageButton"
+            android:background="@drawable/arrow_left"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="onClickLeftArrow"
+            android:contentDescription="@string/left_arrow" />
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:id="@+id/rightArrowImageButton"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/arrow_right"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:onClick="onClickRightArrow"
+            android:contentDescription="@string/right_arrow" />
+
+    </FrameLayout>
+
+</FrameLayout>

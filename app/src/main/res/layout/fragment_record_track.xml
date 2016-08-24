@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RecordTrackFragment"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            android:id="@+id/recordButton"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickRecord"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopRecordingButton"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="false"
+            android:onClick="onClickStopRecording"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:text="@string/stop"
+            android:ellipsize="none" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/song_details_color_circle">
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textSize="50sp"
+                android:textColor="#BDBDBD" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

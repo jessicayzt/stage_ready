@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SetFragment"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/statsFrameLayout"
+        android:elevation="3dp"
+        android:background="@color/colorListItem"
+        android:focusable="false"
+        android:clickable="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_songs_0_breaks_total_time_00_00"
+            android:id="@+id/statsTextView"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textIsSelectable="false" />
+    </FrameLayout>
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:fastScrollEnabled="false"
+        android:longClickable="false"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/statsFrameLayout" />
+
+    <include
+        layout="@android:layout/list_content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/statsFrameLayout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/FrameLayout"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_song"
+            android:id="@+id/addSongButton"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickAddSong"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_break"
+            android:id="@+id/addBreakButton"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickAddBreak"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:id="@+id/setMenuButton"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickSetMenu"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingTextView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:elevation="24dp"
+        android:textIsSelectable="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:paddingLeft="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:background="#EEEEEE"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+</RelativeLayout>

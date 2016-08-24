@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:visibility="visible"
+    android:elevation="5dp">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/FrameLayout"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/positionFrameLayout"
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/position"
+                android:id="@+id/positionTextView"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="3.5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/positionEditText"
+                android:layout_gravity="right|center_vertical"
+                android:singleLine="true"
+                android:minLines="1"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:lines="1"
+                android:hint="@string/hash"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:id="@+id/positionColon"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </FrameLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/songNameEditText"
+            android:hint="@string/name"
+            android:layout_gravity="left|center_vertical"
+            android:singleLine="true"
+            android:minLines="1"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:lines="1"
+            android:textIsSelectable="false"
+            android:layout_marginBottom="1dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minsEditText"
+                android:layout_gravity="left|center_vertical"
+                android:hint="@string/mm"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:minLines="1"
+                android:textIsSelectable="false"
+                android:singleLine="true"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:id="@+id/lengthColon"
+                android:layout_gravity="center"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secsEditText"
+                android:layout_gravity="right|center_vertical"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:minLines="1"
+                android:hint="@string/ss"
+                android:textIsSelectable="false"
+                android:singleLine="true"
+                android:textAlignment="textEnd" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

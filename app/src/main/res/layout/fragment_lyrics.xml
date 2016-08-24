@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LyricsFragment"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyricsEditText"
+            android:layout_gravity="top"
+            android:hint="@string/add_lyrics"
+            android:inputType="textMultiLine"
+            android:maxLength="3000"
+            android:gravity="top|left" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/frameLayout"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undo"
+            android:id="@+id/undoButton"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickUndo"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:id="@+id/lyricsMenuButton"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickLyricsMenu"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+    </FrameLayout>
+
+</FrameLayout>

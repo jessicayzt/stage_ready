@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:visibility="visible"
+    android:elevation="5dp"
+    android:clickable="false">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/FrameLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minsEditText"
+            android:layout_gravity="left|center_vertical"
+            android:hint="@string/mm"
+            android:lines="1"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:minLines="1"
+            android:singleLine="true"
+            android:longClickable="false"
+            android:textIsSelectable="false"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:id="@+id/Colon"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secsEditText"
+            android:layout_gravity="right|center_vertical"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:minLines="1"
+            android:hint="@string/ss"
+            android:textIsSelectable="false"
+            android:longClickable="false"
+            android:lines="1"
+            android:textAlignment="textEnd" />
+
+    </FrameLayout>
+
+</RelativeLayout>

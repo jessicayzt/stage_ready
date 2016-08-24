@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_change"
+            android:id="@+id/transposeChordsTextView"
+            android:layout_gravity="top|center_vertical"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transpose_accidentals_as"
+            android:id="@+id/accidentalsTextView"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Sharps"
+                android:textOff="Flats"
+                android:switchPadding="10dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:lines="1"
+                android:id="@+id/accidentalsSwitch"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sharps"
+                android:id="@+id/sharpsTextView"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flats"
+                android:id="@+id/flatsTextView"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <Spinner
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/transposeChordsSpinner" />
+
+    </LinearLayout>
+
+</FrameLayout>

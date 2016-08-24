@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00ACC1</color>
+    <color name="colorSongDetails">#00BCD4</color>
+    <color name="colorBackground">#fafafa</color>
+    <color name="colorListItem">#F5F5F5</color>
+    <color name="colorSelected">#E0F7FA</color>
+    <color name="colorCurrentDay">#EEEEEE</color>
+    <color name="colorPractice">#F44336</color>
+    <color name="colorGig">#3F51B5</color>
+    <color name="colorInterview">#03A9F4</color>
+    <color name="colorPodcast">#E91E63</color>
+    <color name="colorSession">#009688</color>
+    <color name="colorPhotoshoot">#FFC107</color>
+    <color name="colorRed">#e53935</color>
+    <color name="colorTransparent">#00fafafa</color>
+</resources>

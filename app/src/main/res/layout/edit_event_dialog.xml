@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/FrameLayout"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/eventColorIndicator"
+                android:background="@color/colorPractice"
+                android:layout_gravity="left|center_vertical" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/eventSpinner"
+                android:layout_gravity="center_vertical|right"
+                android:visibility="visible"
+                android:dropDownWidth="180dp" />
+
+        </FrameLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventNameEditText"
+            android:hint="@string/name"
+            android:singleLine="true"
+            android:minLines="1"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:visibility="visible" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_date"
+                android:id="@+id/editEventSetDateButton"
+                android:visibility="visible"
+                android:singleLine="true"
+                android:clickable="true"
+                android:onClick="onClickEditEventSetDate"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:elevation="5dp"
+                android:ellipsize="none"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateTextView"
+                android:layout_gravity="right|center_vertical"
+                android:singleLine="true"
+                android:minLines="1"
+                android:maxLines="1"
+                android:lines="1"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    android:id="@+id/colonTextView"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventMinsEditText"
+                    android:layout_gravity="right|center_vertical"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:minLines="1"
+                    android:hint="@string/mm"
+                    android:textIsSelectable="false"
+                    android:singleLine="true"
+                    android:textAlignment="textEnd" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventHourEditText"
+                    android:layout_gravity="left|center_vertical"
+                    android:hint="@string/hh"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:minLines="1"
+                    android:textIsSelectable="false"
+                    android:singleLine="true"
+                    android:textAlignment="textEnd" />
+
+            </FrameLayout>
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:id="@+id/amPmSpinner"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="visible"
+                android:dropDownWidth="60dp" />
+        </FrameLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationEditText"
+            android:hint="@string/location"
+            android:singleLine="true"
+            android:minLines="1"
+            android:maxLines="1"
+            android:maxLength="15" />
+
+    </LinearLayout>
+
+</FrameLayout>

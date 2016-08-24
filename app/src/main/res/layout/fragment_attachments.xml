@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AttachmentsFragment"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/import_string"
+            android:id="@+id/importSheetMusicButton"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickImportSheetMusic"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_view"
+            android:id="@+id/closeViewButton"
+            android:layout_gravity="right|center_vertical"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:clickable="true"
+            android:onClick="onClickCloseView"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:elevation="5dp"
+            android:ellipsize="none" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/attachmentsGridView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:columnWidth="190dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:visibility="visible"
+            android:stackFromBottom="false"
+            android:stretchMode="spacingWidthUniform"
+            android:gravity="top|center_horizontal" />
+
+        <metafire.stageready.libs.touch_image_view.TouchImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/attachmentImageView"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">Stage Ready</string>
+    <string name="stage_ready_logo">Stage Ready Logo</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="an_app_by">An app by:</string>
+    <string name="metafire">Metafire</string>
+    <string name="metafire_logo">Metafire Logo</string>
+    <string name="ss">SS</string>
+    <string name="colon">:</string>
+    <string name="mm">MM</string>
+    <string name="name">Name</string>
+    <string name="set_date">SET DATE</string>
+    <string name="hh">HH</string>
+    <string name="location">Location</string>
+    <string name="use_three_letter_abbrev">Use Three Letter Abbrev.</string>
+    <string name="show_monday_as_first_day">Show Monday As First Day</string>
+    <string name="feedback_queries_and_bug_reports">Feedback, Queries, and Bug Reports</string>
+    <string name="get_in_touch">If you have any feedback, queries, suggestions for new features, or encounter any unexpected behaviour, please get in touch!</string>
+    <string name="hash">#</string>
+    <string name="position">Position</string>
+    <string name="import_string">IMPORT</string>
+    <string name="close_view">CLOSE VIEW</string>
+    <string name="add_lyrics">Add lyrics. Denote chords by surrounding them with []. For example: [Am], [Gsus7]. Lyrics are automatically saved upon exiting.</string>
+    <string name="undo">UNDO</string>
+    <string name="menu">MENU</string>
+    <string name="record">RECORD</string>
+    <string name="stop">STOP</string>
+    <string name="add_event">ADD EVENT</string>
+    <string name="left_arrow">Left Arrow</string>
+    <string name="right_arrow">Right Arrow</string>
+    <string name="_0_songs_0_breaks_total_time_00_00">0 Songs, 0 Breaks, Total Time: 00:00</string>
+    <string name="add_song">ADD SONG</string>
+    <string name="add_break">ADD BREAK</string>
+    <string name="key">Key:</string>
+    <string name="tempo">Tempo:</string>
+    <string name="controller">CONTROLLER</string>
+    <string name="use_large_text_size">Use Large Text Size</string>
+    <string name="align_lyrics_to_centre">Align Lyrics to Centre</string>
+    <string name="add_notes">Add notes.</string>
+    <string name="replace_all_instances_of">Replace all instances of&#8230;</string>
+    <string name="with">with&#8230;</string>
+    <string name="key_change">Key Change: increase or decrease the number of semitones (half-step) intervals for all detected chords.</string>
+    <string name="transpose_accidentals_as">Transpose accidentals as:</string>
+    <string name="sharps">Sharps</string>
+    <string name="flats">Flats</string>
+    <string name="name_colon">Name: %1$s</string>
+    <string name="length">Length: %1$s:%2$s</string>
+    <string name="position_in_set">Position in Set: %1$s</string>
+    <string name="larghissimo">Larghissimo</string>
+    <string name="grave">Grave</string>
+    <string name="lento_largo">Lento/Largo</string>
+    <string name="larghetto">Larghetto</string>
+    <string name="adagio">Adagio</string>
+    <string name="andante">Andante</string>
+    <string name="moderato">Moderato</string>
+    <string name="allegro">Allegro</string>
+    <string name="vivace">Vivace</string>
+    <string name="presto">Presto</string>
+    <string name="prestissimo">Prestissimo</string>
+    <string name="space">%1$s %2$s</string>
+    <string name="loading">Loading details&#8230;</string>
+    <string name="chronometer_reset">00:00</string>
+    <string name="colon_space">%1$s: %2$s</string>
+    <string name="comma_space">%1$s, %2$s</string>
+    <string name="recording">Recording&#8230;</string>
+    <string name="file_not_found">File not found.</string>
+
+    <string-array name="keys">
+        <item>A</item>
+        <item>Am</item>
+        <item>A#</item>
+        <item>A#m</item>
+        <item>B</item>
+        <item>Bm</item>
+        <item>C</item>
+        <item>Cm</item>
+        <item>C#</item>
+        <item>C#m</item>
+        <item>D</item>
+        <item>Dm</item>
+        <item>D#</item>
+        <item>D#m</item>
+        <item>E</item>
+        <item>Em</item>
+        <item>F</item>
+        <item>Fm</item>
+        <item>F#</item>
+        <item>F#m</item>
+        <item>G</item>
+        <item>Gm</item>
+        <item>G#</item>
+        <item>G#m</item>
+    </string-array>
+
+    <string-array name="song_options">
+        <item>Details</item>
+        <item>Edit</item>
+        <item>Notes</item>
+        <item>Delete</item>
+
+    </string-array>
+
+    <string-array name="break_options">
+        <item>Edit</item>
+        <item>Notes</item>
+        <item>Delete</item>
+    </string-array>
+
+
+    <string-array name="attachment_options">
+        <item>Notes</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="track_options">
+        <item>Edit</item>
+        <item>Notes</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="set_menu_options">
+        <item>New</item>
+        <item>Save</item>
+        <item>Manage Saved Sets</item>
+    </string-array>
+
+    <string-array name="saved_set_options">
+        <item>Load</item>
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="event_options">
+        <item>Edit</item>
+        <item>Notes</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="sched_menu_options">
+        <item>Upcoming Events</item>
+        <item>Clear All Events</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="am_pm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <string-array name="main_menu_options">
+        <item></item>
+        <item>Backup</item>
+        <item>Restore Backup</item>
+        <item>About</item>
+        <item>Contact Developer</item>
+        <item>Rate</item>
+        <item>Clear App Data</item>
+
+    </string-array>
+
+    <string-array name="lyrics_menu_options">
+        <item>Save</item>
+        <item>Transpose</item>
+        <item>Search and Replace</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="half_steps_change">
+        <item>+11</item>
+        <item>+10</item>
+        <item>+9</item>
+        <item>+8</item>
+        <item>+7</item>
+        <item>+6</item>
+        <item>+5</item>
+        <item>+4</item>
+        <item>+3</item>
+        <item>+2</item>
+        <item>+1</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-6</item>
+        <item>-7</item>
+        <item>-8</item>
+        <item>-9</item>
+        <item>-10</item>
+        <item>-11</item>
+    </string-array>
+
+    <string-array name="half_steps_sharps">
+        <item>A</item>
+        <item>A#</item>
+        <item>B</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>D</item>
+        <item>D#</item>
+        <item>E</item>
+        <item>F</item>
+        <item>F#</item>
+        <item>G</item>
+        <item>G#</item>
+    </string-array>
+
+    <string-array name="half_steps_flats">
+        <item>Ab</item>
+        <item>A</item>
+        <item>Bb</item>
+        <item>B</item>
+        <item>C</item>
+        <item>Db</item>
+        <item>D</item>
+        <item>Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>Gb</item>
+        <item>G</item>
+    </string-array>
+
+</resources>
