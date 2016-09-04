@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:padding="10dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <FrameLayout
-        android:layout_width="150dp"
+        android:layout_width="165dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp">
 
         <ImageView
+            android:id="@+id/stageReadyLogoImageView"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/stageReadyLogoImageView"
-            android:layout_gravity="left|center_vertical"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription="@string/stage_ready_logo"
             android:maxHeight="40dp"
             android:maxWidth="40dp"
             android:minHeight="40dp"
             android:minWidth="40dp"
-            android:src="@mipmap/stage_ready_icon"
-            android:contentDescription="@string/stage_ready_logo" />
+            android:src="@mipmap/stage_ready_icon" />
 
         <TextView
+            android:id="@+id/stageReadyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/stageReadyTextView"
-            android:layout_gravity="right|center_vertical"
-            android:textSize="18sp"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/app_name"
             android:textColor="@color/colorPrimaryDark"
-            android:text="@string/app_name" />
+            android:textSize="18sp" />
     </FrameLayout>
 
     <TextView
+        android:id="@+id/versionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/version_1_0"
-        android:id="@+id/versionTextView"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:text="@string/version_1_0" />
 
     <TextView
+        android:id="@+id/anAppByTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/anAppByTextView"
         android:layout_gravity="center_horizontal"
-        android:textIsSelectable="false"
         android:layout_marginBottom="10dp"
-        android:text="@string/an_app_by" />
+        android:text="@string/an_app_by"
+        android:textIsSelectable="false" />
 
     <FrameLayout
-        android:layout_width="110dp"
+        android:layout_width="128dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal">
 
         <TextView
+            android:id="@+id/metafireTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/metafire"
-            android:id="@+id/metafireTextView"
             android:layout_gravity="left|center_vertical"
+            android:text="@string/metafire"
             android:textColor="@color/colorPrimaryDark"
             android:textIsSelectable="false"
             android:textSize="18sp" />
 
         <ImageView
+            android:id="@+id/metafireLogoImageView"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/metafireLogoImageView"
             android:layout_gravity="right|center_vertical"
+            android:contentDescription="@string/metafire_logo"
             android:maxHeight="40dp"
             android:maxWidth="40dp"
             android:minHeight="40dp"
             android:minWidth="40dp"
-            android:src="@drawable/metafire_logo"
-            android:contentDescription="@string/metafire_logo" />
+            android:src="@drawable/metafire_logo" />
 
     </FrameLayout>
 

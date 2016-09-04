@@ -59,7 +59,8 @@ public class AttachmentsFragment extends Fragment implements Serializable {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
-        int widthButton = (int) Math.floor(width*0.499);
+        int widthButton = (int) Math.floor(width * 0.498);
+        int widthColumn = (int) Math.floor(width * 0.5);
 
         importSheetMusicButton.setWidth(widthButton);
         importSheetMusicButton.getBackground().setColorFilter(ContextCompat.getColor(getActivity(), R.color.colorAccent), PorterDuff.Mode.MULTIPLY);
@@ -123,6 +124,8 @@ public class AttachmentsFragment extends Fragment implements Serializable {
                 return true;
             }
         });
+
+        attachmentsGridView.setColumnWidth(widthColumn);
         return rootView;
     }
 }

@@ -2,45 +2,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.AttachmentsFragment"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    tools:context=".fragments.AttachmentsFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="2dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp">
 
         <Button
+            android:id="@+id/importSheetMusicButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/import_string"
-            android:id="@+id/importSheetMusicButton"
             android:layout_gravity="left|center_vertical"
-            android:visibility="visible"
-            android:singleLine="true"
             android:clickable="true"
-            android:onClick="onClickImportSheetMusic"
-            android:textSize="13sp"
-            android:textColor="#ffffff"
             android:elevation="5dp"
-            android:ellipsize="none" />
+            android:ellipsize="none"
+            android:onClick="onClickImportSheetMusic"
+            android:singleLine="true"
+            android:text="@string/import_string"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
 
         <Button
+            android:id="@+id/closeViewButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/close_view"
-            android:id="@+id/closeViewButton"
             android:layout_gravity="right|center_vertical"
-            android:visibility="visible"
-            android:singleLine="true"
             android:clickable="true"
-            android:onClick="onClickCloseView"
-            android:textSize="13sp"
-            android:textColor="#ffffff"
             android:elevation="5dp"
-            android:ellipsize="none" />
+            android:ellipsize="none"
+            android:onClick="onClickCloseView"
+            android:singleLine="true"
+            android:text="@string/close_view"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
 
     </FrameLayout>
 
@@ -51,27 +52,27 @@
         android:padding="10dp">
 
         <GridView
+            android:id="@+id/attachmentsGridView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/attachmentsGridView"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="50dp"
-            android:columnWidth="190dp"
+            android:columnWidth="200dp"
+            android:gravity="top|center_horizontal"
             android:numColumns="2"
-            android:verticalSpacing="10dp"
-            android:visibility="visible"
             android:stackFromBottom="false"
             android:stretchMode="spacingWidthUniform"
-            android:gravity="top|center_horizontal" />
+            android:verticalSpacing="20dp"
+            android:visibility="visible" />
 
         <metafire.stageready.libs.touch_image_view.TouchImageView
+            android:id="@+id/attachmentImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/attachmentImageView"
             android:layout_gravity="top|center_horizontal"
             android:layout_marginBottom="50dp"
-            android:visibility="gone"
-            android:adjustViewBounds="true" />
+            android:adjustViewBounds="true"
+            android:visibility="gone" />
 
     </FrameLayout>
 

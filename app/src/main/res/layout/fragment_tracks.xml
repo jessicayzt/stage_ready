@@ -2,60 +2,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TracksFragment"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    tools:context=".fragments.TracksFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="2dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp">
 
         <Button
+            android:id="@+id/importTrackButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/importTrackButton"
             android:layout_gravity="left|center_vertical"
-            android:visibility="visible"
-            android:singleLine="true"
             android:clickable="true"
-            android:onClick="onClickImportTrack"
-            android:textSize="13sp"
-            android:textColor="#ffffff"
             android:elevation="5dp"
             android:ellipsize="none"
-            android:text="@string/import_string" />
+            android:onClick="onClickImportTrack"
+            android:singleLine="true"
+            android:text="@string/import_string"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/controller"
             android:id="@+id/controllerButton"
-            android:layout_gravity="center"
-            android:visibility="visible"
-            android:singleLine="true"
-            android:clickable="false"
-            android:onClick="onClickController"
-            android:textSize="13sp"
-            android:textColor="#ffffff"
-            android:elevation="5dp"
-            android:ellipsize="none" />
-
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stop"
-            android:id="@+id/stopTrackButton"
-            android:layout_gravity="right|center_vertical"
-            android:visibility="visible"
-            android:singleLine="true"
+            android:layout_gravity="center"
             android:clickable="false"
-            android:onClick="onClickStopTrack"
-            android:textSize="13sp"
-            android:textColor="#ffffff"
             android:elevation="5dp"
-            android:ellipsize="none" />
+            android:ellipsize="none"
+            android:onClick="onClickController"
+            android:singleLine="true"
+            android:text="@string/controller"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/stopTrackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:clickable="false"
+            android:elevation="5dp"
+            android:ellipsize="none"
+            android:onClick="onClickStopTrack"
+            android:singleLine="true"
+            android:text="@string/stop"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
 
     </FrameLayout>
 
@@ -65,24 +66,24 @@
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:layout_marginBottom="50dp"
+        android:choiceMode="singleChoice"
         android:clickable="true"
         android:fastScrollEnabled="false"
-        android:longClickable="false"
-        android:choiceMode="singleChoice" />
+        android:longClickable="false" />
 
     <include
         layout="@android:layout/list_content"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="left"
         android:layout_marginBottom="50dp" />
 
     <MediaController
+        android:id="@+id/tracksMediaController"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:id="@+id/tracksMediaController"
         android:layout_gravity="center_horizontal|bottom"
-        android:visibility="visible"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="50dp"
+        android:visibility="visible" />
 
 </FrameLayout>

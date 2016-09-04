@@ -59,7 +59,7 @@ public class LyricsFragment extends Fragment implements Serializable {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
-        int widthButton = (int) Math.floor(width * 0.499);
+        int widthButton = (int) Math.floor(width * 0.498);
 
         undoButton.setWidth(widthButton);
         undoButton.getBackground().setColorFilter(ContextCompat.getColor(getActivity(), R.color.colorAccent), PorterDuff.Mode.MULTIPLY);

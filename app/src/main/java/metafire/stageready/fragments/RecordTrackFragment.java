@@ -47,7 +47,7 @@ public class RecordTrackFragment extends Fragment implements Serializable {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
-        int widthButton = (int) Math.floor(width*0.499);
+        int widthButton = (int) Math.floor(width * 0.498);
 
         Button stopRecordingButton = (Button) rootView.findViewById(R.id.stopRecordingButton);
         Button recordButton = (Button) rootView.findViewById(R.id.recordButton);
