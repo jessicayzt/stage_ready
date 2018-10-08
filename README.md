@@ -9,33 +9,35 @@ With Stage Ready you can manage your routine in an easy way! A paperless solutio
 Features:
 
 General:
--Backup to external storage and backup restore
+- Backup to external storage and backup restore
 
 Repertoire:
--Add songs and breaks to setlists
--View statistics on set length and total time
--Rehearsal notes on songs
--Reorder set
-***
--View statistics on songs
--Attach lyrics and chords to songs
--Transposition: increase or decrease the number of semitones (half-step) intervals for all chords with options to transpose accidentals as sharps or flats
--Lyrics search and replace
--Lyrics display settings (text size, alignment)
--Import sheet music
--Pinch/double tap to zoom and pan for sheet music
--Playback on imported or recorded tracks
--High quality recording with files saved in external storage
--Rehearsal notes for sheet music and imported or recorded tracks
-***
+- Add songs and breaks to setlists
+- View statistics on set length and total time
+- Rehearsal notes on songs
+- Reorder set
+
+
+- View statistics on songs
+- Attach lyrics and chords to songs
+- Transposition: increase or decrease the number of semitones (half-step) intervals for all chords with options to transpose accidentals as sharps or flats
+- Lyrics search and replace
+- Lyrics display settings (text size, alignment)
+- Import sheet music
+- Pinch/double tap to zoom and pan for sheet music
+- Playback on imported or recorded tracks
+- High quality recording with files saved in external storage
+- Rehearsal notes for sheet music and imported or recorded tracks
+
+
 The above features can be used concurrently for practice or songwriting.
 
 Scheduling:
--Calendar to view and manage events
--Calendar display settings
--Color coding for various types of events
--View upcoming events
--Notes for events
+- Calendar to view and manage events
+- Calendar display settings
+- Color coding for various types of events
+- View upcoming events
+- Notes for events
 
 Minimum version required: Android 4.4 KitKat
 Supports all screen sizes, including tablets.
